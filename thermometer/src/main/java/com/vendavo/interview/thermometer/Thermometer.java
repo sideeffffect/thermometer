@@ -1,5 +1,7 @@
 package com.vendavo.interview.thermometer;
 
+import java.util.Optional;
+
 public interface Thermometer {
 
     /**
@@ -17,5 +19,5 @@ public interface Thermometer {
      * @param temperature current temperature
      * @return color according to given temperature
      */
-    Color measure(double temperature) throws IllegalAccessException;
+    Optional<Color> measure(double temperature);
 }
